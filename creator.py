@@ -5,7 +5,6 @@ from moviepy.editor import *
 
 # Parse command line arguments
 parser = argparse.ArgumentParser()
-parser.add_argument('--smooth', action='store_true', help='Enable smooth transitions')
 parser.add_argument('--resolution', type=int, default=1024, help='Resolution of the output video (square)')
 parser.add_argument('--fps', type=int, default=24, help='Frames per second in the output video')
 parser.add_argument('--output', type=str, default="infinite_video", help='Name of the output video file (without extension)')
@@ -28,10 +27,6 @@ for img in images:
 
     # Resize image from 200% to 100% size during the clip
     zoom_clip = clip.resize(lambda t: 2 - t / clip.duration)
-
-    # Apply crossfadein and crossfadeout to final video if smooth flag is passed
-    if args.smooth:
-        zoom_clip = zoom_clip.crossfadein(1).crossfadeout(1)
 
     clips.append(zoom_clip)
 
