@@ -25,7 +25,6 @@ The images to be used by the script should be placed in a folder named imgs loca
 
 You can run the project using Python. The script accepts several parameters:
 
-* `smooth`: Enable smooth transitions between image clips.
 * `resolution`: Specify the resolution of the output video (square). Default is 1024.
 * `fps`: Set frames per second in the output video. Default is 24.
 * `output`: Set the name for the output video file. The `.mp4` extension will be added automatically.
