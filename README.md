@@ -38,3 +38,5 @@ Please feel free to fork this repo and submit PRs for any improvements or fixes 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+[<img src="bmc_qr.png">](https://www.buymeacoffee.com/betazetadev "Buy me a coffee if you liked it")
