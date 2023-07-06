@@ -38,7 +38,7 @@ for img in images:
 # Concatenate all zooming clips into a final video
 final_video = concatenate_videoclips(clips, method="compose")
 
-# Crop the final video to 80% of its size both horizontally and vertically
+# Crop the final video
 final_video = final_video.crop(x_center=final_video.w/2, y_center=final_video.h/2, width=final_video.w/2, height=final_video.h/2)
 
 # Resize the final video to the desired resolution
