@@ -21,10 +21,17 @@ git clone https://codeberg.org/betazetadev/infinite-video-creator
 
 ### Usage
 
-You can run the project using Python.
+The images to be used by the script should be placed in a folder named imgs located in the same directory as the script. Each image should be a .png file and should have a number indicating its position in its filename (e.g., 1.png, 2.png, etc.). The images are ordered based on these numbers, with the higher numbers (corresponding to the closest image in terms of zoom) processed first, and the lower numbers (corresponding to the farthest image) processed last.
+
+You can run the project using Python. The script accepts several parameters:
+
+* `smooth`: Enable smooth transitions between image clips.
+* `resolution`: Specify the resolution of the output video (square). Default is 1024.
+* `fps`: Set frames per second in the output video. Default is 24.
+* `output`: Set the name for the output video file. The `.mp4` extension will be added automatically.
 
 ```bash
-python main.py --output my_output_video_name
+python creator.py
 ```
 
 ## Issues
